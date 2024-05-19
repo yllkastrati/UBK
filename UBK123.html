@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website per Basketbolliste sipas Klubeve(UBK)</title>
+    <style>
+        body {
+            background-color: #C0C0C0;
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color:#191970 ;
+            color: black;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0 20px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            color: #666;
+        }
+       table {
+            width: 70%;
+            margin: 0 auto;
+        }
+        h2 {
+		background-color: royalblue;
+            color: black;
+            padding: 5%;
+        }
+        footer {
+            background-color: #191970;
+            color: black;
+            clear: both;
+            text-align: center; 
+            padding: 2%;
+			}
+		.center {
+			text-align:center;
+		}
+		video {
+			width:420px;
+			height: 200px;
+		}
+		
+		
+			
+    </style>
+</head>
+<body>
+<header>
+<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
+    <text x="50%" y="50%" font-size="11" font-family="Helvetica" font-weight="bold" fill="black" text-anchor="middle" dy=".35em">UBK</text>
+</svg>
+
+    <h1>Website per Basketbolliste sipas klubeve</h1>
+    <nav>
+        <a href="#Ballina">Ballina</a>
+        <a href="#Basketbollistet">Basketbollistet</a>
+        <a href="#Kontakti">Kontakti</a>
+    </nav>
+</header>
+
+<section id="Basketbollistet">
+    <table>
+        <h2 style="background-color:royalblue; color:black; padding: 5%;">Dallas Mavericks</h2>
+        <tr>
+            <td style="width: 50%; background-color:royalblue;">
+                <img src="C:\Users\User\Desktop\UBK\luka.png" width="100%">
+                <br>
+                <b>Emri Mbiemri:</b> Luka Doncic <br>
+                <b>Pozicioni:</b> Guard<br>
+                <b>Klubi:</b> Dallas Mavericks</td>
+            <td style="width: 50%; background-color:lightblue;">
+                <img src="C:\Users\User\Desktop\UBK\kyrie.png" width="100%">
+                <br>
+                <b>Emri Mbiemri:</b>Kyrie Irving<br>
+                <b>Pozicioni:</b> Guard<br>
+                <b>Klubi:</b> Dallas Mavericks</td>
+        </tr>
+    </table>
+</section>
+
+<section id="Basketbollistet">
+    <table>
+        <h2 style="background-color:royalblue; color:black; padding: 5%;">Los Angeles Lakers</h2>
+        <tr>
+            <td style="width: 50%; background-color:royalblue;">
+                <img src="C:\Users\User\Desktop\UBK\lebron.png" width="100%">
+                <br>
+                <b>Emri Mbiemri:</b> LeBron James  <br>
+                <b>Pozicioni:</b> Forward<br>
+                <b>Klubi:</b>Los Angeles Lakers</td>
+            <td style="width: 50%; background-color:lightblue;">
+                <img src="C:\Users\User\Desktop\UBK\davis.png" width="100%">
+                <br>
+                <b>Emri Mbiemri:</b> Anthony Davis<br>
+                <b>Pozicioni:</b> Center<br>
+                <b>Klubi:</b> Los Angeles Lakers</td>
+        </tr>
+    </table>
+</section>
+			<body>
+    <h2>Rreth ndeshjes se fundit</h2>
+   
+        <tr>
+            <td></td>
+        </tr>
+    
+    <div class="center">
+        <button onclick="playPause()">Play/Pause</button>
+        
+        <button onclick="Description()">Description</button>
+        <br><br>
+        <video id="video">
+            <source src="C:\Users\User\Desktop\UBK\Video\dallas1234.mp4" type="video/mp4">
+           
+        </video>
+        <p id="demo"></p>
+    </div>
+	<br>
+	<table>
+	<tr>
+		<td>
+		<div class="center">
+			<audio controls="auto-play"  >
+			<source src="C:\Users\User\Desktop\UBK\kyrie voice.mp3" type="audio/mpeg">
+			<source src="C:\Users\User\Desktop\UBK\kyrie voic.ogg" type="audio/ogg">
+		</div>
+		</audio>
+		</td>
+		<td>
+		<div class="center">
+			<audio controls>
+			<source src="C:\Users\User\Desktop\UBK\luka voice.ogg" type="audio/ogg">
+			<source src="C:\Users\User\Desktop\UBK\luka voice.mp3" type="audio/mpeg">
+		</div>
+		</audio>
+		</td>
+	</tr>
+	</table>
+	
+	
+
+
+
+    <script>
+        var video = document.getElementById("video");
+
+        function playPause() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function makeBig() {
+            video.width = 600;
+        }
+
+        function makeSmall() {
+            video.width = 200;
+        }
+
+        function makeNormal() {
+            video.width = 400;
+        }
+
+        function Description() {
+            document.getElementById("demo").innerHTML ="Dalls vs Lakers";
+        }
+    </script>
+       
+
+
+<section id="Kontakti">
+    <table>
+        <tr>
+            <h2 style="background-color:royalblue; color:black; padding: 5%;">kontakti</h2>
+            <td style="width:55%;">
+                <form action="#" method="post" style="margin-left:20%; margin-top:0;">
+                    <input type="text" name="firstname" placeholder="Emri" style="margin: 0px; width: 70%; height: 70%;">
+                    <br><br>
+                    <input type="text" name="lastname" placeholder="Mbiemri" style="margin: 0px; width: 70%; height: 70%;">
+                    <br><br>
+                    <textarea id="message" name="message" style="margin: 0px; width: 70%; height: 70%;">Mesazhi</textarea>
+                    <br><br>
+                    <input type="submit" name="add" value="Dergo">
+                </form>
+            </td>
+            <td>
+                <div class="mapouter">
+                    <div class="gmap_canvas">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2937.9148907000463!2d21.57688307504162!3d42.578328921285625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1354e97bcae5ebe9%3A0x879ffe993affc053!2sThe%20Sun!5e0!3m2!1sen!2s!4v1715180709937!5m2!1sen!2s" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <a href="https://www.whatismyip-address.com"></a>
+                    </div>
+                </div>
+            </td>
+        </tr>
+    </table>
+</section>
+
+<footer>
+
+	<table id="Referencat">
+        <th>Referencat</th>
+        <tr>
+            <td>
+                <a href="https://www.espn.com/nba/player/_/id/3945274/luka-doncic">Luka Doncic</a>
+                <a href="https://www.espn.com/nba/player/_/id/6442/kyrie-irving">Kyrie Irving</a>
+                <a href="https://www.espn.com/nba/player/_/id/1966/lebron-james">Lebron James</a>
+                <a href="https://www.espn.com/nba/player/_/id/6583/anthony-davis">Anthony Davis</a>
+				<a href="https://www.voicy.network/">Audio</a>
+				<a href="https://www.youtube.com/watch?v=gl94iM4wk9I&t=185s">Video</a>
+            </td>
+            <td>
+                
+            </td>
+        </tr>
+    </table>
+</footer>
+ 
+
+</body>
+</html>
